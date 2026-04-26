@@ -54,3 +54,48 @@ h2 {
     width: 50%;
 }
 
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 48px;
+        padding-top: 200px;
+    }
+
+    .container {
+        width: 90%;
+        transform: translateX(50px);
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+        padding-top: 150px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .container {
+        flex-direction: column; /* muda layout */
+        width: 100%;
+        padding: 10px;
+        transform: translateY(50px); /* animação melhor pra mobile */
+    }
+
+    .container img,
+    .container h2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+        padding-top: 100px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
